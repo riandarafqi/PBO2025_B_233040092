@@ -2,21 +2,21 @@ package Pertemuan7;
 
 public class TranskripNilaiMain {
     public static void main(String[] args) {
-        Dosen dosen1 = new Dosen("123456781", "ANGGORO ARI NURCAHYO, ST.,M.Kom.");
-        Dosen dosen2 = new Dosen("123456782", "DR. AYI PURBASARI, ST., MT.");
-        Dosen dosen3 = new Dosen("123456783", "ADE SUKENDAR, ST.,MT.");
-        Dosen dosen4 = new Dosen("123456784", "ADE SUKENDAR, ST.,MT.");
-        Dosen dosen5 = new Dosen("123456785", "ERIK, ST.,M.Kom.");
-        Dosen dosen6 = new Dosen("123456786", "Siroj Nur Ulum, ST., MT.");
+        Dosen dosen1 = new Dosen("123456789", "Sandhila Galih");
+        Dosen dosen2 = new Dosen("123456780", "Erik");
+        Dosen dosen3 = new Dosen("123456788", "ADE SUKENDAR");
+        Dosen dosen4 = new Dosen("123456787", "Tatang Sudrajat");
+        Dosen dosen5 = new Dosen("123456786", "AYI PURBASARI");
+        Dosen dosen6 = new Dosen("123456785", "ANGGORO ARI NURCAHYO");
 
         // Create objek MataKuliah
-        MataKuliah mk1 = new MataKuliah("001", "Visualisasi Data", "A", 2, dosen1);
-        MataKuliah mk2 = new MataKuliah("002", "Sistem Berorientasi Objek", "A", 3, dosen2);
+        MataKuliah mk1 = new MataKuliah("001", "Internet Of Things", "A", 2, dosen1);
+        MataKuliah mk2 = new MataKuliah("002", "Multimedia", "A", 3, dosen2);
         MataKuliah mk3 = new MataKuliah("003", "Rekayasa Perangkat Lunak", "B", 3, dosen3);
 
-        MataKuliah mk4 = new MataKuliah("004", "Praktikum Pemrograman 1", "A", 3, dosen4);
-        MataKuliah mk5 = new MataKuliah("005", "Praktikum Multimedia", "AB", 3, dosen5);
-        MataKuliah mk6 = new MataKuliah("006", "Pemrograman Berorientasi Objek", "A", 3, dosen6);
+        MataKuliah mk4 = new MataKuliah("004", "Agama","BC", 3, dosen4);
+        MataKuliah mk5 = new MataKuliah("005", "Sistem Berorientasi Objek", "AB", 3, dosen5);
+        MataKuliah mk6 = new MataKuliah("006", "Praktikum Basis Data", "A", 3, dosen6);
 
         // Create objek KHS
         KartuHasilStudi khs1 = new KartuHasilStudi("3");
@@ -32,7 +32,7 @@ public class TranskripNilaiMain {
         khs2.hitungIPS();
 
         // Create objek Mahasiswa
-        Mahasiswa mhs = new Mahasiswa("233040111", "Ahmad Dzaki");
+        Mahasiswa mhs = new Mahasiswa("233040092", "Muhammad Rianda Rafqi");
 
         // Create objek TranskripNilai
         TranskripNilai transkrip = new TranskripNilai(mhs);
@@ -42,12 +42,3 @@ public class TranskripNilaiMain {
         transkrip.display();
     }
 }
-
-/*
-Kesimpulan:
-- Program ini mensimulasikan sistem akademik untuk menghitung IPS per semester dan IPK kumulatif mahasiswa.
-
-- Pola OOP (Object-Oriented Programming) diterapkan dengan Encapsulation (penggunaan getter-setter) dan Aggregation (hubungan antara Mahasiswa, KartuHasilStudi, MataKuliah, dan Dosen).
-
-- Output program akan menampilkan data mahasiswa, mata kuliah yang diambil, nilai, IPS, dan IPK secara lengkap.
- */

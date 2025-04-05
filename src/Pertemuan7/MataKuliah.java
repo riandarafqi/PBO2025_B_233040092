@@ -21,22 +21,14 @@ public class MataKuliah {
         // Berdasarkan index matakuliah
         // A = 4, AB = 3.5, B, 3, BC = 2.5, C = 2, D = 1, E = 0
         switch (this.index) {
-            case "A":
-                return 4;
-            case "AB":
-                return 3.5;
-            case "B":
-                return 3;
-            case "BC":
-                return 2.5;
-            case "C":
-                return 2;
-            case "D":
-                return 1;
-            case "E":
-                return 0;
-            default:
-                return 0;
+            case "A": return 4;
+            case "AB":return 3.5;
+            case "B": return 3;
+            case "BC":return 2.5;
+            case "C": return 2;
+            case "D": return 1;
+            case "E": return 0;
+            default:  return 0;
         }
     }
 
